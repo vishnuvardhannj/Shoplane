@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/* Header */
+#nav-bar {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+    box-shadow: 0 2px 4px #ccc;
+    padding: 0 70px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#left-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 36%;
+    min-width: 400px;
+}
+
+#shop-name {
+    cursor: pointer;
+}
+
+#shop-name-first {
+    font-size: 36px;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+
+#shop-name-last {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+#cloth-menu,
+#acces-menu {
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+#search-box {
+    width: 30%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: rgb(236, 231, 231);
+    padding: 0 10px;
+    margin: 0 10px;
+
+}
+
+
+#right-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shopping-cart {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}
+
+#cart-item-count {
+    position: absolute;
+    bottom: 3px;
+    left: 16px;
+    font-size: 12px;
+    background-color: #009688;
+    color: white;
+    padding: 5px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    border-radius: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+#profile-pic {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+
+
+/* Details-Content */
+
+
+#details-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 60vh;
+}
+
+/* Left side */
+.preview-card {
+    width: 40%;
+    padding-right: 8%;
+    padding-top: 16px;
+    box-sizing: border-box;
+    align-self: flex-start;
+}
+
+.preview-image {
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+/* Right side */
+.content-card {
+    width: 60%;
+    margin-top: 60px;
+    box-sizing: border-box;
+}
+
+.product-name {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.product-brand {
+    font-weight: 600;
+    color: black;
+    opacity: 0.6;
+    margin: 0;
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+.content-card h3 span {
+    color: #009688;
+    font-weight: bold;
+}
+
+.price-prefix{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(27, 25, 25);
+}
+
+.description,.product-preview{
+    font-weight: 400;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.description-text {
+    font-size: 18px;
+    width: 70%;
+    margin-top:5px;
+    color: #6d6e6e;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+
+/* Preveiw photo */
+.preview-photo {
+    margin: 5px;
+    width: 10%;
+    height: 20%;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+}
+
+.active {
+    border: 2px solid #009688;
+    box-sizing: content-box;
+
+}
+
+.add-button {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding: 16px 32px;
+    letter-spacing: 2px;
+    background-color: #009688;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.add-button:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Page footer */
+
+#page-footer {
+    display: flex;
+    padding: 50px 20%;
+    background-color: #1D1C1F;
+    color: rgb(214, 211, 211);
+    line-height: 1;
+    margin-top: 100px;
+    justify-content: space-between
+}
+
+#online-store,
+#helpful-links,
+#partners {
+    display: flex;
+    flex-direction: column;
+}
+
+#online-store :nth-child(n+2),
+#helpful-links :nth-child(n+2),
+#partners :nth-child(n+2) {
+    cursor: pointer;
+
+}
+
+
+.footer-link {
+    text-decoration: none;
+    color: rgb(214, 211, 211);
+    font-weight: 300;
+    line-height: 2
+}
+
+#online-store :first-child,
+#helpful-links :first-child,
+#partners :first-child,
+#address:first-child {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+
+/* project Logo */
+
+#project-logo{
+    position: fixed;
+    width: 120px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+}
+
+
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 480px){
+
+    /* Header */
+
+    #nav-bar{
+        padding:0 25%; 
+        width:100%;
+    }
+    #left-nav-bar{
+        min-width:250px
+    }
+
+    #cloth-menu,#acces-menu{
+        margin:0px 2px;
+        display:none;
+    }
+    #search-box{
+        display:none;
+    }
+    #right-nav-bar{
+        margin-left:10px;
+        margin-right:10px;
+    }
+
+    /* Carousel */
+
+    .slider-wrapper{
+        display:none
+    }
+
+
+
+    #details-content{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+
+
+    .preview-card {
+        width:100%;
+        padding:0 10%;
+    }
+
+    .preview-image{
+        height:500px;
+
+    }
+
+    .content-card{
+        padding: 10px 10%;
+        width:100%;
+        margin-top:0px
+    }
+
+    .product-name {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+
+
+
+
+
+
+    /* Page footer */
+    #page-footer{
+        padding: 20px 5%;
+        margin-top:50px;
+        text-align:center
+    }
+    #online-store :first-child ,#helpful-links :first-child,#partners :first-child, #address:first-child{
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 13px;
+    } 
+
+    #online-store :nth-child(n+2),#helpful-links :nth-child(n+2),#partners :nth-child(n+2),#address :nth-child(n+2){
+        font-size: 10px;
+        margin: 0;
+    }
+
+    #address-first{
+        font-size:13px ;
+        font-weight: 600;
+
+    }
+
+}
